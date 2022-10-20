@@ -1,7 +1,12 @@
 import gulp from 'gulp';
+import pug from 'gulp-pug';
 
-const helloWorld = async() => {
-  console.log('Hello, World');
-}
 
-export const development = gulp.series([ helloWorld, ]);
+const buildPug = async () => (
+  gulp.src('./src/pug/pages/*.pug')
+    .pipe(pug({}))
+    .pipe(gulp.dest('./build'))
+);
+
+
+export const development = gulp.series([ buildPug, ]);
