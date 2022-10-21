@@ -1,0 +1,17 @@
+section.reviews
+  h2.reviews__header Отзывы
+
+  .reviews__slider
+    ul.reviews__list
+      li.reviews__item
+        include ./review.pug
+      li.reviews__item
+        include ./review.pug
+      li.reviews__item
+        include ./review.pug
+
+    .reviews__controls
+      button(type="button").reviews__control.reviews__control--backward: span.visually-hidden Назад
+      button(type="button").reviews__control.reviews__control--forward: span.visually-hidden Вперед
+
+  button(type="button").button Написать
