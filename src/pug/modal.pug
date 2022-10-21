@@ -1,0 +1,19 @@
+.modal
+  section.modal__window
+    h2.modal__title Добавить в корзину
+
+    form(action="", method="post").modal__form
+      fieldset.modal__fieldset
+        legend.modal__legend Выберите размер:
+        ul.modal__size-list
+          li.modal__size-item
+            input.modal__size-input#size-s(type="radio", name="size", value="s", checked)
+            label.modal__size-label(for="size") S
+          li.modal__size-item
+            input.modal__size-input#size-m(type="radio", name="size", value="m")
+            label.modal__size-label(for="size") M
+          li.modal__size-item
+            input.modal__size-input#size-l(type="radio", name="size", value="l")
+            label.modal__size-label(for="size") L
+
+      button(type="submit").modal__submit-button.button Добавить
