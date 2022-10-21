@@ -1,0 +1,24 @@
+header.main-header
+  a(href="/index.html").main-header__logo: img(src="logo.svg", alt="Логотип Мишки")
+
+  .main-header__content-wrapper
+    nav.main-header__navigation
+      ul.main-header__navigation-list
+        li.main-header__navigation-item
+          a(href="#").main-header__navigation-link Каталог товаров
+        li.main-header__navigation-item
+          a(href="#").main-header__navigation-link Вязание на заказ
+
+      ul.main-header__navigation-list.main-header__navigation-list--additional
+        li.main-header__navigation-item
+          a(href="#").main-header__navigation-link Новые поступления
+        li.main-header__navigation-item
+          a(href="#").main-header__navigation-link Распродажа
+
+    .main-header__actions
+      a(href="#").main-header__action.main-header__action--search: span.visually-hidden Искать
+      a(href="#").main-header__action.main-header__action--cart: span.visually-hidden Корзина
+
+    p.main-header__delivery Бесплатная доставка по России
+
+    button(type="button"): span.visually-hidden Меню
