@@ -1,5 +1,6 @@
 extends ../layout.pug
 include ../products.pug
+include ../hero.pug
 
 block append variables
   - pageTitle = 'Каталог товаров | MISHKA';
@@ -10,3 +11,6 @@ block main
 
 block modals
   include ../modal.pug
+
+block hero
+  +hero('Каталог товаров')
