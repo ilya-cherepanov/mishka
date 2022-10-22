@@ -1,0 +1,14 @@
+mixin product-card(product)
+  article.product-card
+    h3.product-card__title= product.title
+
+    img(src=product.img, alt=product.title)
+
+    dl.product-card__features
+      each feature in product.features
+        dt.feature-card__feature-name= feature.name
+        dd.feature-card__feature-value= feature.value
+
+    p.product-card__price #{product.price} руб.
+
+    a.product-card__buy(href="#"): span.visually-hidden Добавить в корзину

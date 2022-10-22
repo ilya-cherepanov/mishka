@@ -1,0 +1,10 @@
+include ./product-card.pug
+
+mixin products(products)
+  section.products
+    h2.visually-hidden Список товаров
+
+    ul.products__list
+      each product in products
+        li.product__item
+          +product-card(product)
