@@ -1,16 +1,13 @@
-doctype html
-html(lang="ru")
-  head
-    meta(charset="utf-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title MISHKA
-  body
-    include ../header.pug
-    include ../hero.pug
-    main
-      include ../top-product.pug
-      include ../about.pug
-      include ../reviews.pug
-      include ../contacts.pug
-    include ../footer.pug
-    include ../modal.pug
+extends ../layout.pug
+
+block modals
+  include ../modal.pug
+
+block hero
+  include ../hero.pug
+
+block main
+  include ../top-product.pug
+  include ../about.pug
+  include ../reviews.pug
+  include ../contacts.pug
