@@ -2,10 +2,10 @@ import gulp from 'gulp';
 import pug from 'gulp-pug';
 import browserSync from 'browser-sync';
 import { deleteAsync } from 'del';
-import path from 'path';
-import { fileURLToPath } from 'url';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import plumber from 'gulp-plumber';
-import { readFileSync } from 'fs';
+import { readFileSync } from 'node:fs';
 
 
 const DIR_NAME = path.dirname(fileURLToPath(import.meta.url));
